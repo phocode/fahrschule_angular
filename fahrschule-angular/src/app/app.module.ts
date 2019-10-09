@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +22,7 @@ import { LoginComponent } from './components/login/login.component';
     RouterModule.forRoot([
       {
         path: '',
-        component: AppComponent
+        component: HomeComponent
       },
       {
         path: 'login',
